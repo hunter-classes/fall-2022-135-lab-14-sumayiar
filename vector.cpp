@@ -1,7 +1,7 @@
 #include <iostream>
 #include "vector.h"
 
-MyVector(){
+Vec(){
     array = new T[1];
     capacity = 1;
     currentData = 0;
@@ -30,12 +30,14 @@ void push_back(item){
         capacity *= 2;
         array = newArr;
     }
-    array[currentDara] = item;
+    array[currentData] = item;
     currentData++;
 }
 void pop_back(n){
     currentData--;
 }
 void clear(){
-
+    for(int i = currentData; i >= 0; i--){
+        a
+    }
 }

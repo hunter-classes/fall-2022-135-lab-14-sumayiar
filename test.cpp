@@ -36,7 +36,7 @@ template <typename T> class MyVector{
                 capacity *= 2;
                 array = newArr;
             }
-            array[currentDara] = item;
+            array[currentData] = item;
             currentData++;
         }
         void pop_back(n){

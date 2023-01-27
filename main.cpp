@@ -7,14 +7,15 @@ int main(){
     Vec<int> even;
     Vec<string> fruits;
 
-    // even.push_back(2);
-    // even.push_back(4);
-    // even.push_back(6);
+    even.push_back(2);
+    even.push_back(4);
+    even.push_back(6);
     even.push_back(8);
     even.push_back(10);
-    // fruits.push_back("apple");
-    // fruits.push_back("orange");
-    // fruits.push_back("pineapple");
+
+    fruits.push_back("apple");
+    fruits.push_back("orange");
+    fruits.push_back("pineapple");
     fruits.push_back("mango");
     fruits.push_back("banana");
 
