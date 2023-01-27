@@ -1,43 +1,50 @@
 #include <iostream>
+#include <string>
 #include "vector.h"
+using namespace std;
 
-Vec(){
-    array = new T[1];
-    capacity = 1;
-    currentData = 0;
-}
-void size(){
-    return currentData;
-}
-void capacity(){
-    return capacity;
-}
-void empty(){
-    if(currentData == 0){
-        cout << "true" << endl;
-    }
-    else if(currentData > 0){
-        cout << "false" << endl;
-    }
-}
-void push_back(item){
-    if(currentData == capacity){
-        T* newArr = new T[2 * capacity];
-        for(int i = 0; i < capacity; i++){
-            newArr[i] = array[i];
+void push_back(T item){
+    if (current == capacityData){
+        T* temp = new T[2 * capacityData];
+
+        for (int i = 0; i < capacityData; i++) {
+        temp[i] = arr[i];
         }
-        delete[] array;
-        capacity *= 2;
-        array = newArr;
+        delete[] arr;
+        capacityData *= 2;
+        arr = temp;
     }
-    array[currentData] = item;
-    currentData++;
+    arr[current] = item;
+    current++;
 }
-void pop_back(n){
-    currentData--;
+
+void pop_back(){
+    current--;
 }
-void clear(){
-    for(int i = currentData; i >= 0; i--){
-        a
+
+int size(){
+    return current;
+}
+
+int capacity(){
+    return capacityData;
+}
+
+bool empty(){
+    if(current == 0){
+        return true;
+    }
+    else if(current > 0){
+        return false;
     }
 }
+
+// void pop_back(n){
+    
+// }
+
+// void clear(){
+
+// }
+
+
